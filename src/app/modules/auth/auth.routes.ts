@@ -19,15 +19,6 @@ router.post(
 );
 
 router.post(
-    '/forgot-password',
-    AuthenticationController.forgotPassword
-);
-router.post(
-    '/reset-password',
-    AuthenticationController.resetPassword
-);
-
-router.post(
     '/change-password',
     auth(
         ENUM_USER_ROLE.SUPER_ADMIN,
